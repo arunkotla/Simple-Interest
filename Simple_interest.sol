@@ -34,7 +34,7 @@ contract Simple_Interest{
         uint principle =  deposits[depositIndex].amount;
         uint interest = (principle*interestRate*timePeriod)/100;
 
-        return interest;
+        return interest/10**18;
 
     }
 
